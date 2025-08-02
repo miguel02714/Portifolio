@@ -8,20 +8,19 @@
       box-sizing: border-box;
       font-family: "DM Sans", sans-serif;
     }
-    
-:root {
-  --hue: 90;
-  --primary-color: hsl(var(--hue), 92%, 43%); /* verde forte */
-  --primary-hover: hsl(var(--hue), 92%, 33%);
-  --secundary-color: #0b0b0b; /* fundo preto */
-  --third-color: hsla(0, 0%, 100%, 0.1);
-  --bg-color: #0b0b0b; /* fundo preto */
-  --headline: #000000; /* textos brancos */
-  --paragraph: #ffffff; /* verde claro para parágrafos ou destaques */
-  --paragraph-2: #e0fff3;
-  font-size: 62.5%;
-  --nav-height: 7.2rem;
-}
+    :root {
+      --hue: 90;
+      --primary-color: hsl(var(--hue), 92%, 43%);
+      --primary-hover: hsl(var(--hue), 92%, 33%);
+      --secundary-color: hsl(0, 0%, 5%);
+      --third-color: hsla(0, 0%, 100%, 0.1);
+      --bg-color: hsl(0, 0%, 8%);
+      --headline: hsl(0, 0%, 100%);
+      --paragraph: hsla(0, 0%, 100%, 0.658);
+      --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+      font-size: 62.5%;
+      --nav-height: 7.2rem;
+    }
     html {
       scroll-behavior: smooth;
     }
@@ -37,13 +36,13 @@
       background-color: var(--bg-color);
     }
     body.light-mode {
-  --bg-color: #0b0b0b;
-  --secundary-color: #0b0b0b;
-  --third-color: hsla(0, 0%, 100%, 0.05);
-  --headline: #000000;
-  --paragraph: #ffffff;
-  --paragraph-2: #ffffff;
-}
+      --secundary-color: rgb(229, 229, 229);
+      --third-color: hwb(0 48% 52% / 0.356);
+      --bg-color: rgb(241, 241, 241);
+      --headline: hsl(0, 0%, 0%);
+      --paragraph: rgb(32, 32, 32);
+      --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
+    }
     ::-webkit-scrollbar {
       width: 0.8rem;
     }
@@ -1222,9 +1221,6 @@
       .social-links {
         gap: 1.5rem;
       }
-      #home {
-  background-color: #0b0b0b; /* Ou a cor escura que você estiver usando no resto do site */
-}
       nav#navigation a.logo,
       footer a.logo {
         font-size: 2.5rem;
