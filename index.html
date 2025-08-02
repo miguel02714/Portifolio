@@ -15,8 +15,8 @@
       --secundary-color: hsl(0, 0%, 5%);
       --third-color: hsla(0, 0%, 100%, 0.1);
       --bg-color: hsl(0, 0%, 8%);
-      --headline: hsl(0, 0%, 0%);
-      --paragraph: hsla(0, 0%, 0%, 0.658);
+      --headline: hsl(0, 100%, 96%);
+      --paragraph: hsla(0, 0%, 100%, 0.658);
       --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
       font-size: 62.5%;
       --nav-height: 7.2rem;
@@ -426,7 +426,11 @@
     #home img#notebook-2-white {
       position: absolute;
     }
-
+    body.light-mode #home img#notebook-2-white {
+      position: absolute;
+      visibility: visible;
+      opacity: 1;
+    }
     #home img#notebook-2 {
       position: absolute;
       z-index: 90;
@@ -1180,7 +1184,9 @@
       #home p {
         font-size: 1.4rem;
       }
-
+      #home .line {
+        white-space: initial;
+      }
       @keyframes typing {
         from {
           width: 0;
