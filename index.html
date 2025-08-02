@@ -8,14 +8,13 @@
       box-sizing: border-box;
       font-family: "DM Sans", sans-serif;
     }
-    
     :root {
       --hue: 90;
       --primary-color: hsl(var(--hue), 92%, 43%);
       --primary-hover: hsl(var(--hue), 92%, 33%);
-      --secundary-color: hsl(0, 0%, 0%);
+      --secundary-color: hsl(0, 0%, 5%);
       --third-color: hsla(0, 0%, 100%, 0.1);
-      --bg-color: hsl(0, 0%, 0%);
+      --bg-color: hsl(0, 0%, 8%);
       --headline: hsl(0, 0%, 100%);
       --paragraph: hsla(0, 0%, 0%, 0.658);
       --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
@@ -37,12 +36,11 @@
       background-color: var(--bg-color);
     }
     body.light-mode {
-      --secundary-color: rgb(255, 255, 255);
+      --secundary-color: rgb(0, 0, 0);
       --third-color: hwb(0 48% 52% / 0.356);
       --bg-color: rgb(0, 0, 0);
-      --headline: hsl(0, 0%, 100%);
+      --headline: hsl(0, 0%, 0%);
       --paragraph: rgb(32, 32, 32);
-      --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
     }
     ::-webkit-scrollbar {
       width: 0.8rem;
@@ -315,7 +313,9 @@
       position: relative;
       z-index: 100;
     }
-     /*===== HOME ===================================*/
+    body.menu-expanded button path {
+      stroke: white;
+    } /*===== HOME ===================================*/
     #home {
       height: 100vh;
       min-height: calc(60rem + var(--nav-height));
@@ -1222,9 +1222,6 @@
       .social-links {
         gap: 1.5rem;
       }
-      #home {
-  background-color: #0b0b0b; /* Ou a cor escura que você estiver usando no resto do site */
-}
       nav#navigation a.logo,
       footer a.logo {
         font-size: 2.5rem;
@@ -1655,7 +1652,6 @@
         </div>
       </div>
     </section>
-    <section id="projects"><div class="wrapper"></div></section>
     <section id="knowledge">
       <div class="wrapper">
         <header><h2>Conhecimentos</h2></header>
@@ -1803,16 +1799,19 @@
             </p>
           </div>
           <div class="projeto-card">
-            <img
-              src="assets/images/PROTOCOLO 0 (4).png"
-              alt="Focus Ia"
-            />
+            <img src="assets/images/PROTOCOLO 0 (4).png" alt="Focus Ia" />
             <h3>FOCUS AI</h3>
             <p>
-              A Focus IA foi a primeira inteligência artificial que desenvolvi com o objetivo de revolucionar o modo como as pessoas estudam conteúdos online. O projeto nasceu da identificação de um problema real: o afastamento das novas gerações de plataformas confiáveis como a Wikipédia, devido ao design poluído e pouco atraente dessas páginas. Com isso, criei uma solução focada na experiência do usuário e na clareza do conteúdo.
-
-  Ao acessar a Focus IA, o usuário tem duas opções principais. A primeira é inserir o link de uma página da Wikipédia sobre qualquer tema de estudo. O sistema extrai o conteúdo e apresenta em uma interface minimalista, moderna e extremamente limpa — transformando a leitura em algo mais fluido e prazeroso. A segunda opção permite que o usuário simplesmente peça uma explicação sobre qualquer assunto, e a IA utiliza um modelo treinado para explicar de forma didática, direta e acessível, adaptando a resposta para diferentes níveis de compreensão. É uma plataforma feita para aprender com conforto, sem distrações e com foco total no conteúdo.
-</p>
+              A primeira intelincia artificial feita para melhorar o estudo das
+              pessoas, um problema identificado foi o antigo design de paginas
+              como wikipedia entre outros e estava fazendo o afastamento das
+              novas gerações para o estudo em sites confiaveis, a focus ia tem
+              duas opções quando voce entra, voce pode pegar o link de uma
+              pagina da wikipedia sobre algum tema para voce estudar e ela pega
+              todo o conteudo desse link e te redireciona para uma pagina clean
+              que de o prazer de estar lendo auele conteudo,e voce pode pedir
+              para ela te explicar alguma coisa que a inteligencia foi feita
+              para explicar todos os assuntos
               <a
                 href="https://github.com/miguel02714/servidornasmiguel1"
                 class="github-button"
@@ -1827,7 +1826,7 @@
       <style>
         #projetos {
           padding: 6rem 2rem;
-          background-color: #0b0b0b;
+          background-color: #ffffff;
           color: #fff;
         }
 
